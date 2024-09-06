@@ -26,13 +26,13 @@
 
         .schedule-table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; /* Removes space between table borders */
         }
 
         .schedule-table th, .schedule-table td {
             border: 1px solid #ccc;
             padding: 10px;
-            text-align: center;
+            text-align: center; 
         }
 
         .schedule-table th {
@@ -41,11 +41,16 @@
         }
         footer {
             display: flex;
-            justify-content: center;
-            align-items: center; 
-            flex-direction: column; 
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* this align items to center */
+            flex-direction: column;  /* Stacks content in a column */
             color: rgb(0, 0, 0);
             padding: 20px;
+        } 
+        .small-space {  /* Spacing for Class code and rooms */
+            margin-top: 2px; 
+            margin-bottom: 0; 
+            font-size: 10px; 
         }
     </style>
 </head>
@@ -54,7 +59,7 @@
         <h1>CLASS SCHEDULE</h1>
         <h6><i>FIRST SEMESTER, AY2024-2025</i></h6>
         <table class="schedule-table">
-            <thead>
+            <thead> <!-- The head of the table -->
                 <tr>
                     <th>Time</th>
                     <th>Monday</th>
@@ -65,14 +70,14 @@
                 </tr>
             </thead>
             <tbody>
-                
+                <!-- Components of the table -->
                 <tr>
                     <td>7:00 - 8:00</td>
-                    <td colspan = "0">&nbsp;</td>
+                    <td colspan = "0">&nbsp;</td> <!-- This is for empty cell and for spacing of the cells -->
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "2">Math 408</td>
+                    <td rowspan="2">Math 408<h6 class="small-space">Room 102</h6></td>  <!-- class is use for small space of the spacing of 2 texts -->
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "2">Math 408</td>
+                    <td rowspan = "2">Math 408<h6 class="small-space">Room 102</h6></td> <!-- Merges two cells vertically -->
                 </tr>
                 <tr>
                     <td>8:00 - 9:00</td>
@@ -84,20 +89,18 @@
                     <td>9:00 - 10:00</td>
                     <td colspan = "0">&nbsp;</td>
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "1">IT 331</td>
+                    <td rowspan = "1">IT 331<h6 class="small-space">Room 102</h6></td>
                     <td colspan = "0">&nbsp;</td>
-                    <td rowspan = "1">IT 321</td>
-
-
+                    <td rowspan = "1">IT 321<h6 class="small-space">Room 102</h6></td>
 
                 </tr>
                 <tr>
                     <td>10:00 - 11:00</td>
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "3">IT 331</td>
-                    <td rowspan = "2">IT 331</td>
-                    <td rowspan = "2">CS 312</td>
-                    <td rowspan = "3">IT 314</td>
+                    <td rowspan = "3">IT 331<h6 class="small-space">LAB2</h6></td>
+                    <td rowspan = "2">IT 331<h6 class="small-space">Room 102</h6></td>
+                    <td rowspan = "2">CS 312<h6 class="small-space">Room 102</h6></td>
+                    <td rowspan = "3">IT 314<h6 class="small-space">LAB3</h6></td>
                 </tr>
                 <tr>
                     <td>11:00 - 12:00</td>
@@ -114,7 +117,7 @@
                     <td>1:00 - 2:00</td>
                     <td colspan = "1">&nbsp;</td>
                     <td colspan = "0">&nbsp;</td>
-                    <td rowspan = "2">CS 311</td>
+                    <td rowspan = "2">CS 311<h6 class="small-space">Room 102</h6></td>
                     <td colspan = "0">&nbsp;</td>
                     <td colspan = "0">&nbsp;</td>
 
@@ -122,22 +125,22 @@
                 <tr>
                     <td>2:00 - 3:00</td>
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "2">IT 314</td>
+                    <td rowspan = "2">IT 314<h6 class="small-space">Room 101</h6></td>
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "2">CS 311</td>
+                    <td rowspan = "2">CS 311<h6 class="small-space">Room 101</h6></td>
                     
                     
                 </tr>
                 <tr>
                     <td>3:00 - 4:00</td>
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "2">GED 104</td>
+                    <td rowspan = "2">GED 104<h6 class="small-space">Room 101</h6></td>
                     <td colspan = "0">&nbsp;</td>
                 </tr>
                 <tr>
                     <td>4:00 - 5:00</td>
                     <td colspan = "1">&nbsp;</td>
-                    <td rowspan = "2">GED 104</td>
+                    <td rowspan = "2">GED 104<h6 class="small-space">Room 102</h6></td>
                     <td colspan = "0">&nbsp;</td>
                     <td colspan = "0">&nbsp;</td>
                 </tr>
@@ -153,7 +156,7 @@
     </div>
 
     <footer>
-        <h3>Class Codoes and Descriptions:</h3>
+        <h3>Class Codoes and Descriptions:</h3> <!-- This is for Class codes and description of each class -->
         <ul>
             <li>IT 331 - Application Development and Emerging Technologies (3 units)</li>
             <li>IT 321 - Human-Computer Interaction (3 units)</li>
