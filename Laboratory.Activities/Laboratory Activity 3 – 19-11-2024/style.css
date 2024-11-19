@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #332f2f;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    display: block;
+    width: 40%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+
+  }
+  
+  #wordcount, #sentenceCount {
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    text-align: left;
+  }
+  
+  #wordcount {
+    color: #ffffff;
+  }
+  
+  #sentenceCount {
+    color: #ffffff;
+  }
+  
